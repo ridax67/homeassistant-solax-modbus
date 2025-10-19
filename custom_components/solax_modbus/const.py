@@ -525,24 +525,14 @@ def value_function_2byte_timestamp(initval, descr, datadict):
 TIME_OPTIONS = {}
 TIME_OPTIONS_GEN4 = {}
 for h in range(0, 24):
-    for m in range(0, 60, 5):
+    for m in range(0, 60, 15):
         TIME_OPTIONS[m * 256 + h] = f"{h:02}:{m:02}"
         TIME_OPTIONS_GEN4[h * 256 + m] = f"{h:02}:{m:02}"
-        if (
-            h,
-            m,
-        ) == (
-            0,
-            0,
-        ):  # add extra entry 00:01
-            TIME_OPTIONS[1 * 256 + h] = f"{h:02}:{m+1:02}"
-            TIME_OPTIONS_GEN4[h * 256 + 1] = f"{h:02}:{m+1:02}"
-        if (
-            h,
-            m,
-        ) == (
-            23,
-            55,
-        ):  # add extra entry 23:59
-            TIME_OPTIONS[(m + 4) * 256 + h] = f"{h:02}:{m+4:02}"
-            TIME_OPTIONS_GEN4[h * 256 + m + 4] = f"{h:02}:{m+4:02}"
+
+TIME_OPTIONS_END = {}
+TIME_OPTIONS_END_GEN4 = {}
+for h in range(0, 24):
+    for m in range(0, 60, 15):
+        TIME_OPTIONS_END[(m + 14) * 256 + h] = f"{h:02}:{m+14:02}"
+        TIME_OPTIONS_END_GEN4[h * 256 + m + 14] = f"{h:02}:{m+14:02}"
+

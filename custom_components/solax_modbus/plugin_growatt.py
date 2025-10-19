@@ -108,7 +108,7 @@ def encode_time_begin(begin_str, enabled, mode):
     elif mode == 'Grid First':
         value += 16384
     return value
-    
+
 def value_function_time_1_update(initval, descr, datadict):
     time_begin = datadict.get('time_1_begin', '00:00')
     time_end = datadict.get('time_1_end', '00:00')
@@ -117,9 +117,9 @@ def value_function_time_1_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_1: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 1 End cannot be smaller than Time 1 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 1 End cannot be smaller than Time 1 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -135,9 +135,9 @@ def value_function_time_2_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_2: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 2 End cannot be smaller than Time 2 Begin")
-        return None
+ #   if time_to_int(time_end) < time_to_int(time_begin):
+ #       _LOGGER.error("Growatt: Time 2 End cannot be smaller than Time 2 Begin")
+ #       return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -153,9 +153,9 @@ def value_function_time_3_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_3: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 3 End cannot be smaller than Time 3 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 3 End cannot be smaller than Time 3 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -171,9 +171,9 @@ def value_function_time_4_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_4: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 4 End cannot be smaller than Time 4 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 4 End cannot be smaller than Time 4 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -189,9 +189,9 @@ def value_function_time_5_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_5: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 5 End cannot be smaller than Time 5 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 5 End cannot be smaller than Time 5 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -207,9 +207,9 @@ def value_function_time_6_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_6: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 6 End cannot be smaller than Time 6 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 6 End cannot be smaller than Time 6 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -225,9 +225,9 @@ def value_function_time_7_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_7: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 7 End cannot be smaller than Time 7 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 7 End cannot be smaller than Time 7 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -243,9 +243,9 @@ def value_function_time_8_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_8: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 8 End cannot be smaller than Time 8 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 8 End cannot be smaller than Time 8 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -261,9 +261,9 @@ def value_function_time_9_update(initval, descr, datadict):
 
     _LOGGER.debug(f"time_9: begin={time_begin}, end={time_end}, enabled={enabled}, mode={mode}")
 
-    if time_to_int(time_end) < time_to_int(time_begin):
-        _LOGGER.error("Growatt: Time 9 End cannot be smaller than Time 9 Begin")
-        return None
+#    if time_to_int(time_end) < time_to_int(time_begin):
+#        _LOGGER.error("Growatt: Time 9 End cannot be smaller than Time 9 Begin")
+#        return None
 
     return [
         (REGISTER_U16, encode_time_begin(time_begin, enabled, mode)),
@@ -731,7 +731,7 @@ def value_function_inverter_fault_text(initval, descr, datadict):
         (705, 0): "Overheat inside the backup box"
     }
     return bit_labels.get((main_code, sub_code), f"Unknown Fault (main_code={main_code}, sub_code={sub_code})")
-	
+
 def value_function_run_mode(initval, descr, datadict):
     run_mode = datadict.get('register_3000', 0)
     run_mode = run_mode & 0xFF # Mask out the upper 8 bits, keeping only the lower 8 bits
@@ -1118,7 +1118,7 @@ NUMBER_TYPES = [
     GrowattModbusNumberEntityDescription(
         name = "EMS Charging Stop SOC",
         key = "ems_charging_stop_soc",
-        register = 3048,
+	register = 3048,
         unit = REGISTER_U16,
         native_min_value = 11, #according to shine app.
         native_max_value = 100,
@@ -1226,7 +1226,7 @@ SELECT_TYPES = [
         name = "Battery First Time 4 End",
         key = "battery_first_time_4_end",
         register = 1018,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
@@ -1256,7 +1256,7 @@ SELECT_TYPES = [
         name = "Battery First Time 5 End",
         key = "battery_first_time_5_end",
         register = 1021,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
@@ -1279,6 +1279,7 @@ SELECT_TYPES = [
         register = 1023,
         option_dict = TIME_OPTIONS_GEN4,
         allowedtypes = GEN3,
+
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
     ),
@@ -1286,7 +1287,7 @@ SELECT_TYPES = [
         name = "Battery First Time 6 End",
         key = "battery_first_time_6_end",
         register = 1024,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
@@ -1294,6 +1295,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Battery First Time 6",
         key = "battery_first_time_6",
+
         register = 1025,
         option_dict = {
                 0: "Disabled",
@@ -1320,7 +1322,7 @@ SELECT_TYPES = [
         name = "Grid First Time 4 End",
         key = "grid_first_time_4_end",
         register = 1027,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1349,7 +1351,7 @@ SELECT_TYPES = [
         name = "Grid First Time 5 End",
         key = "grid_first_time_5_end",
         register = 1030,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1379,7 +1381,7 @@ SELECT_TYPES = [
         name = "Grid First Time 6 End",
         key = "grid_first_time_6_end",
         register = 1033,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1415,7 +1417,7 @@ SELECT_TYPES = [
         name = "Grid First Time 1 End",
         key = "grid_first_time_1_end",
         register = 1081,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1444,14 +1446,14 @@ SELECT_TYPES = [
         name = "Grid First Time 2 End",
         key = "grid_first_time_2_end",
         register = 1084,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
     ),
     GrowattModbusSelectEntityDescription(
         name = "Grid First Time 2",
-        key = "grid_first_time_2",
+key = "grid_first_time_2",
         register = 1085,
         option_dict = {
                 0: "Disabled",
@@ -1474,7 +1476,7 @@ SELECT_TYPES = [
         name = "Grid First Time 3 End",
         key = "grid_first_time_3_end",
         register = 1087,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1520,7 +1522,7 @@ SELECT_TYPES = [
         name = "Battery First Time 1 End",
         key = "battery_first_time_1_end",
         register = 1101,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
@@ -1550,7 +1552,7 @@ SELECT_TYPES = [
         name = "Battery First Time 2 End",
         key = "battery_first_time_2_end",
         register = 1104,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
@@ -1580,7 +1582,7 @@ SELECT_TYPES = [
         name = "Battery First Time 3 End",
         key = "battery_first_time_3_end",
         register = 1107,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:battery-clock",
@@ -1603,7 +1605,8 @@ SELECT_TYPES = [
     ###
     GrowattModbusSelectEntityDescription(
         name = "Load First Time 1 Begin",
-        key = "load_first_time_1_begin",
+        key = "load_first_time_1_begin"
+,
         register = 1110,
         option_dict = TIME_OPTIONS_GEN4,
         allowedtypes = GEN3,
@@ -1614,7 +1617,7 @@ SELECT_TYPES = [
         name = "Load First Time 1 End",
         key = "load_first_time_1_end",
         register = 1111,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1644,7 +1647,7 @@ SELECT_TYPES = [
         name = "Load First Time 2 End",
         key = "load_first_time_2_end",
         register = 1114,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1674,7 +1677,7 @@ SELECT_TYPES = [
         name = "Load First Time 3 End",
         key = "load_first_time_3_end",
         register = 1117,
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         allowedtypes = GEN3,
         entity_category = EntityCategory.CONFIG,
         icon = "mdi:home-clock",
@@ -1740,7 +1743,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 1 End",
         key = "time_1_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -1786,7 +1789,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 2 End",
         key = "time_2_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -1835,7 +1838,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 3 End",
         key = "time_3_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -1884,7 +1887,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 4 End",
         key = "time_4_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -1933,7 +1936,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 5 End",
         key = "time_5_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -1982,7 +1985,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 6 End",
         key = "time_6_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -2031,7 +2034,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 7 End",
         key = "time_7_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -2080,7 +2083,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 8 End",
         key = "time_8_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
@@ -2129,7 +2132,7 @@ SELECT_TYPES = [
     GrowattModbusSelectEntityDescription(
         name = "Time 9 End",
         key = "time_9_end",
-        option_dict = TIME_OPTIONS_GEN4,
+        option_dict = TIME_OPTIONS_END_GEN4,
         write_method = WRITE_DATA_LOCAL,
         unit = REGISTER_U16,
         allowedtypes = HYBRID | GEN4,
